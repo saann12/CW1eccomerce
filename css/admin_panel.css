@@ -1,0 +1,122 @@
+/* admin_panel.css */
+
+/* Reset box-sizing, margin, and padding for consistency */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* General styles for the admin panel */
+.add-item, .product-list {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings in the admin panel */
+h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Form and input styles */
+.add-item form, .edit-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-item input, .add-item select, .add-item textarea, 
+.edit-form input, .edit-form select, .edit-form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+}
+
+.add-item input[type="number"], .add-item input[type="text"], 
+.edit-form input[type="number"], .edit-form input[type="text"] {
+    max-width: 100%;
+}
+
+.add-item textarea, .edit-form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.add-item button, .edit-form button {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.add-item button:hover, .edit-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Product list table styles */
+.product-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.product-list th, .product-list td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.product-list th {
+    background-color: #f4f4f4;
+    color: #333;
+    font-weight: 600;
+}
+
+.product-list td {
+    background-color: #ffffff;
+    color: #333;
+}
+
+.product-list img {
+    max-width: 120px;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Actions link styles */
+.product-list .actions a {
+    color: #007bff;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.product-list .actions a:hover {
+    text-decoration: underline;
+}
+
+/* Edit form visibility and styling */
+.edit-form {
+    margin-top: 20px;
+}
+
+.edit-form.show {
+    display: block;
+}
+
+.edit-form.hidden {
+    display: none;
+}

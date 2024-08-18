@@ -1,0 +1,359 @@
+/* General Styles */
+html {
+  scroll-behavior: smooth;
+  font-family: 'League Spartan', sans-serif;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Changed to flex-start for top alignment */
+}
+
+a {
+  color: white;
+}
+button{
+  height: auto;
+  width: 100px;
+}
+.btn-img{
+  height: 10px;
+  width: auto;
+}
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+
+#nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #232c5b;
+  color: white;
+  padding: 20px 50px;
+}
+
+.logo {
+  width: 45%;
+}
+
+.search {
+  width: 300px;
+  height: fit-content;
+  display: flex;
+  align-items: flex-end;
+  background-color: gray;
+  border-radius: 8px;
+  padding: 5px 10px;
+}
+
+.searchInput {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  font-size: 18px;
+}
+
+.searchInput::placeholder {
+  color: lightgray;
+}
+
+.navLink {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navLink ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.navLink a {
+  text-decoration: none;
+}
+
+.navLink ul li {
+  margin: 0 20px;
+  font-weight: 600;
+}
+
+.navLink ul li .cart {
+  height: 35px;
+  background-color: transparent;
+  filter: brightness(100%);
+}
+
+.navLink a:hover {
+  color: #b4b4b4;
+}
+
+.menuItem {
+  margin-right: 50px;
+  cursor: pointer;
+  color: lightgray;
+  font-weight: 400;
+}
+
+/* .hero {
+  background-image: url('./img/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'League Spartan', sans-serif;
+} */
+
+/* Filter Section */
+.search-filter .filter {
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  padding: 50px;
+  width: 200px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  z-index: 1000;
+  overflow-y: auto; 
+}
+
+.search-filter .filter h2 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.filter-group {
+  margin-bottom: 20px;
+}
+
+.filter-group h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.filter-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1em;
+}
+
+#price-range {
+  width: 100%;
+  margin-top: 10px;
+  -webkit-appearance: button;
+    background: #ddd;
+    height: 7px;
+}
+
+#price-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #007bff;
+  cursor: pointer;
+}
+
+#price-range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #007bff;
+  cursor: pointer;
+}
+
+#price-value {
+  font-weight: bold;
+}
+
+.filter-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.filter-btn:hover {
+  background-color: #0056b3;
+}
+/* Product Cards */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px; /* Slightly larger border-radius for a smoother look */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+  overflow: hidden;
+  width: 320px; /* Increased width for more space */
+  margin: 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s, box-shadow 0.2s;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain; /* Change to cover for a better fit */
+}
+
+.card-body {
+  padding: 20px; /* Increased padding for a more spacious feel */
+}
+
+.card-body img {
+  height: 20px; 
+}
+
+.card-title {
+  font-family: 'Palanquin Dark', sans-serif;
+  font-size: 1.75rem; /* Slightly larger font size for emphasis */
+  color: #333; /* Darker text color for better readability */
+  margin: 0;
+  font-weight: bold; /* Added boldness for impact */
+}
+
+.card-description {
+  font-size: 1rem;
+  color: #777; /* Slightly lighter color for a softer look */
+  margin: 10px 0;
+}
+
+.card-price {
+  font-size: 1.5rem; /* Increased font size for prominence */
+  font-weight: bold; /* Added boldness for emphasis */
+}
+
+.card:hover {
+  transform: translateY(-6px); /* Slightly more pronounced hover effect */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+}
+
+.price-cart {
+  display: flex;
+  justify-content: space-between; /* Space-between for better distribution */
+  align-items: center;
+  padding: 15px 0; /* Added padding for better spacing */
+}
+
+.btn {
+ /* Matching button background color */
+  border: none;
+  border-radius: 5px; /* Rounded corners for the button */
+  padding: 10px 15px; /* Added padding for a more substantial button */
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.btn img {
+  height: 24px; /* Adjusted size to fit well */
+}
+
+
+/* Footer */
+footer {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.footerLeft {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footerMenu {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.fMenuTitle {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.fList {
+  list-style: none;
+  padding: 0;
+}
+
+.fListItem {
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.footerRight {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fMail {
+  display: flex;
+}
+
+.fInput {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.fButton {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.fButton:hover {
+  background-color: #0056b3;
+}
+
+.fIcons img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.footerRightMenu {
+  text-align: center;
+}
+
+.copyright {
+  font-size: 0.875rem;
+  color: #666;
+}

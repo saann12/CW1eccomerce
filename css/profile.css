@@ -1,0 +1,69 @@
+@import url(header.css);
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif; /* Adds a clean, modern font */
+}
+
+/* Container and Heading Styling */
+.profile-container {
+    width: 400px;
+    margin: 20px auto; /* Adds space around the container */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px; /* Rounds corners for a softer look */
+    background-color: #ffffff; /* White background for the profile container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+}
+
+.profile-container h1 {
+    font-size: 28px;
+    color: #007bff; /* Blue color for the heading */
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Individual Profile Info Section */
+.profile-info {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px; /* Adds space between label and paragraph */
+}
+
+.profile-info label {
+    font-size: 16px;
+    font-weight: bold; /* Makes the label text stand out */
+    color: #444; /* Darker color for better readability */
+}
+
+.profile-info p {
+    font-size: 16px;
+    color: #555; /* Slightly lighter than label color */
+    border-radius: 4px; /* Rounds the corners of the paragraph */
+    padding: 8px;
+    background-color: #f1f1f1; /* Light background for the paragraph text */
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); /* Adds a subtle inner shadow */
+}
+
+/* Optional: Add some spacing between profile info sections */
+.profile-info:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 600px) {
+    .profile-container {
+        padding: 15px;
+    }
+
+    .profile-info label, 
+    .profile-info p {
+        font-size: 14px;
+    }
+}

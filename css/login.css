@@ -1,0 +1,274 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Form Container */
+.form-page {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+/* Form Heading */
+.formlog h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Labels */
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* Input Fields */
+.form-group input[type="tel"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Password Visibility Icons */
+.password-input {
+    position: relative;
+}
+
+.password-input .fa-eye,
+.password-input .fa-eye-slash {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #888;
+}
+
+/* Submit Button */
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #5cb85c;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-group button:hover {
+    background-color: #4cae4c;
+}
+
+/* Error Messages */
+.error {
+    color: red;
+    font-size: 14px;
+    display: block;
+}
+
+/* Divider */
+hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 20px 0;
+}
+
+/* Registration Link */
+.reglog p {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+}
+
+.reglog a {
+    color: #5cb85c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.reglog a:hover {
+    text-decoration: underline;
+}
+/* Registration CSS */
+
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Form Container */
+.form-page {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+/* Form Heading */
+.formReg h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Labels */
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* Input Fields */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Password Visibility Icons */
+.password-input {
+    position: relative;
+}
+
+.password-input .fa-eye,
+.password-input .fa-eye-slash {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #888;
+}
+
+/* Submit Button */
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #5cb85c;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-group button:hover {
+    background-color: #4cae4c;
+}
+
+/* Error Messages */
+.error {
+    color: red;
+    font-size: 14px;
+    display: block;
+}
+
+/* Divider */
+hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 20px 0;
+}
+
+/* Terms Checkbox */
+.form-term-group {
+    margin-bottom: 15px;
+}
+
+.form-term-group input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.form-term-group label {
+    display: inline-block;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Registration Link */
+.reglog p {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+}
+
+.reglog a {
+    color: #5cb85c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.reglog a:hover {
+    text-decoration: underline;
+}
+
+/* Align Password Visibility Icons */
+.password-input {
+    position: relative;
+}
+
+.password-input input[type="password"] {
+    width: calc(100% - 40px); /* Adjusting width for icons */
+}
+
+.password-input .fa-eye,
+.password-input .fa-eye-slash {
+    right: 10px;
+}
